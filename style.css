@@ -1,0 +1,257 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #ece6ff;
+    margin: 0;
+    padding: 40px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 34px;
+    letter-spacing: 1px;
+    color: #4f46e5;
+    font-weight: 700;
+}
+
+
+
+/* LAYOUT */
+
+.container {
+    display: flex;
+    gap: 30px;
+    max-width: 950px;
+    margin: auto;
+    align-items: flex-start;
+}
+
+/* LEFT PANEL */
+
+.left-panel {
+    width: 260px;
+    background: #ffffff;
+    border: 1px solid #dcd2ff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.mascot {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#mascot-emoji {
+    font-size: 45px;
+    margin-bottom: 6px;
+}
+
+#mascot-text {
+    font-size: 14px;
+    color: #666;
+}
+
+/* RIGHT PANEL */
+
+.right-panel {
+    flex: 1;
+    background: #ffffff;
+    border: 1px solid #dcd2ff;
+    padding: 22px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+.left-panel:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+    transition: 0.2s;
+}
+
+/* INPUT AREA */
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.input-section input {
+    flex: 1;
+    padding: 11px;
+    border-radius: 8px;
+    border: 1px solid #cfc6ff;
+    font-size: 14px;
+    outline: none;
+}
+
+.input-section input:focus {
+    border-color: #7a6cff;
+}
+
+
+
+#date-picker {
+    font-size: 16px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #d0c7ff;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    outline: none;
+}
+
+#date-picker:focus {
+    border-color: #7a6cff;
+    box-shadow: 0 0 0 2px rgba(122, 108, 255, 0.15);
+}
+
+
+/* BUTTONS */
+
+button {
+    padding: 9px 14px;
+    border: none;
+    background: #7a6cff;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.15s;
+}
+
+button:hover {
+    background: #6757f5;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* HABIT LIST */
+
+#habit-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 430px;
+    overflow-y: auto;
+}
+
+/* HABIT CARD */
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: #f7f5ff;
+    padding: 14px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    transition: 0.2s ease;
+}
+
+
+li:hover {
+    background: #e2dbff;
+    transform: translateY(-5px);
+}
+
+
+/* BIGGER CHECKBOX */
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+    cursor: pointer;
+    accent-color: #6757f5;
+}
+
+input[type="checkbox"]:active {
+    transform: scale(1.2);
+}
+
+li span {
+    flex: 1;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    word-break: break-word;
+}
+
+li.completed span {
+    text-decoration: line-through;
+    color: #7a7a7a;
+}
+
+li.completed {
+    opacity: 0.75;
+}
+
+/* DELETE BUTTON */
+
+.delete-btn {
+    background: #ff6b6b;
+    border: none;
+    padding: 7px 11px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: #ff4f4f;
+}
+
+/* PROGRESS BAR */
+
+.progress-container {
+    width: 100%;
+    height: 12px;
+    background: #e5e5e5;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0%;
+    background: #4CAF50;
+    transition: width 0.3s ease;
+}
+
+/* DARK MODE */
+
+.dark {
+    background: #1a1a2e;
+    color: white;
+}
+
+.dark .left-panel,
+.dark .right-panel {
+    background: #2c2c44;
+    border: 1px solid #3f3f5e;
+}
+
+.dark {
+    background: #151528;
+    color: white;
+}
+
+.dark .left-panel,
+.dark .right-panel {
+    background: #252540;
+    border: 1px solid #3a3a5a;
+}
+
+.dark li {
+    background: #35355a;
+}
+
+.dark li:hover {
+    background: #40406c;
+}

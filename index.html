@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 class="title">Discipline today. Better life tomorrow.</h1>
+    <div class="container">
+
+        <!-- LEFT PANEL -->
+
+        <div class="left-panel">
+
+            <label>Select Date</label> <input type="date" id="date-picker">
+            <p id="today-label"></p>
+
+            <div class="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+            <div class="mascot">
+
+                <div id="mascot-emoji"></div>
+
+                <p id="mascot-text">Let's start your habits!</p>
+
+            </div>
+            <p id="habit-counter">Habits Crushed: 0 / 0</p>
+
+            <button id="theme-toggle">Change the Vibe</button>
+
+        </div>
+
+        <!-- RIGHT PANEL -->
+
+        <div class="right-panel">
+
+            <div class="input-section">
+                <input id="habit-input" type="text" placeholder="Type a habit... no cheating.">
+                <button id="add-btn">Master Jiii lock kardo</button>
+            </div>
+
+            <ul id="habit-list"></ul>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
