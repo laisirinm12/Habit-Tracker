@@ -1,7 +1,7 @@
 # Habit Tracker
 
-A simple **Habit Tracker** built using **HTML, CSS, and JavaScript**.  
-This application helps users add daily habits, mark them as completed, and track their progress for a selected date.
+A simple **Habit Tracker** built using **HTML, CSS and JavaScript**.  
+This application helps users add daily habits, mark them as completed and track their progress for a selected date.
 
 The tracker keeps habits organized by date and displays completion progress using a **progress bar and habit counter**.  
 All data is stored in the browser using **localStorage**, so habits remain saved even after refreshing the page.
